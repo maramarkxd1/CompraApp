@@ -1,0 +1,36 @@
+@mixin mq-xl() {
+    @media screen and(max-width: 1366px) {
+      @content;
+    }
+  }
+  
+  @mixin mq-lg() {
+    @media screen and(max-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin mq-md() {
+    @media screen and(max-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin mq-sm() {
+    @media screen and(max-width: 425px) {
+      @content;
+    }
+  }
+  
+  @mixin mq-xs() {
+    @media screen and(max-width: 375px) {
+      @content;
+    }
+  }
+  
+  // Media Querie especial para el celular
+  @mixin mq-cellphone() {
+    @media screen and(max-width: 1250px) {
+      @content;
+    }
+  }

@@ -1,0 +1,56 @@
+@import 'normalize';
+@import 'fonts';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: 100%;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 86px;
+  padding-right: 86px;
+
+  @include mq-md {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
